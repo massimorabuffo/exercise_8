@@ -1,9 +1,9 @@
 function multiplyByTwo(value) {
-  let number = 2;
-  const inner = function() {
+  const number = 2;
+  return function inner() {
     return value * number;
-  };
-  return inner();
+  }
 };
 
-console.log(multiplyByTwo(4));
+console.log(multiplyByTwo(4)());
+
